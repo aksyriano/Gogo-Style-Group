@@ -1,0 +1,83 @@
+.carouselContainer {
+  position: relative;
+  width: 100%;
+  padding: 2rem 0;
+  overflow: visible;
+}
+
+.scrollContainer {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  padding: 0 1rem;
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollContainer::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.carouselItem {
+  flex: 0 0 calc(100% - 2rem);
+  scroll-snap-align: center;
+  transition: transform 0.3s ease;
+}
+
+/* Responsive sizes */
+@media (min-width: 640px) {
+  .carouselItem {
+    flex: 0 0 calc(50% - 1.5rem);
+    scroll-snap-align: start;
+  }
+}
+
+@media (min-width: 1024px) {
+  .carouselItem {
+    flex: 0 0 calc(25% - 1.5rem);
+  }
+}
+
+.navButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.navButton:hover {
+  background: rgba(255, 255, 255, 0.2);
+  scale: 1.1;
+}
+
+.prevButton {
+  left: -20px;
+}
+
+.nextButton {
+  right: -20px;
+}
+
+/* Hide buttons on mobile if touch is preferred */
+@media (max-width: 768px) {
+  .navButton {
+    display: none;
+  }
+  .carouselContainer {
+    padding: 1rem 0;
+  }
+}

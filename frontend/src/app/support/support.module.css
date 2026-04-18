@@ -1,0 +1,99 @@
+.supportPage {
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+  min-height: 80vh;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  letter-spacing: 4px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #aaaaaa;
+  margin-bottom: 4rem;
+  font-size: 1.1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+.section h2 {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--color-gold);
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.faqItem {
+  margin-bottom: 2rem;
+}
+
+.faqItem h3 {
+  font-size: 1.1rem;
+  color: var(--color-gold);
+  margin-bottom: 0.5rem;
+}
+
+.faqItem p {
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 2.5rem;
+  border-radius: 8px;
+  border: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.inputGroup label {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.inputField {
+  padding: 1rem;
+  background: transparent;
+  border: 1px solid #444;
+  color: white;
+  border-radius: 4px;
+}
+
+.inputField:focus {
+  border-color: var(--color-gold);
+  outline: none;
+}
+
+.textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .title {
+    font-size: 2.2rem;
+  }
+}

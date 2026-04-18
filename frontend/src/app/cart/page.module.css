@@ -1,0 +1,140 @@
+.cartMain {
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+  min-height: 50vh;
+}
+
+.title {
+  font-family: var(--font-playfair);
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.cartLayout {
+  display: flex;
+  gap: 3rem;
+}
+
+.cartItems {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cartItem {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  align-items: center;
+}
+
+.itemImage {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.itemDetails {
+  flex: 1;
+}
+
+.itemName {
+  font-family: var(--font-playfair);
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.itemProps {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.itemPrice {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.itemActions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.qtyControl {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.qtyBtn {
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--border);
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.removeBtn {
+  color: #d9534f;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  text-decoration: underline;
+}
+
+.cartSummary {
+  flex: 1;
+  background: #f9f9f9;
+  padding: 2rem;
+  border-radius: 8px;
+  height: max-content;
+}
+
+.summaryTitle {
+  font-family: var(--font-playfair);
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.summaryTotal {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: var(--font-playfair);
+}
+
+.checkoutBtn {
+  width: 100%;
+  margin-top: 2rem;
+  text-align: center;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .cartLayout {
+    flex-direction: column;
+  }
+}

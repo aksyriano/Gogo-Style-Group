@@ -1,0 +1,84 @@
+.trackingPage {
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  letter-spacing: 4px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #aaaaaa;
+  margin-bottom: 4rem;
+  font-size: 1.1rem;
+}
+
+.card {
+  width: 100%;
+  max-width: 500px;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 3rem;
+  border-radius: 12px;
+  border: 1px solid rgba(212, 175, 55, 0.1);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.inputGroup label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--color-gold);
+}
+
+.inputField {
+  padding: 1.2rem;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid #333;
+  color: white;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.inputField:focus {
+  border-color: var(--color-gold);
+  background: rgba(212, 175, 55, 0.05);
+  outline: none;
+}
+
+.visualHint {
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  color: #666;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 2.2rem;
+  }
+  .card {
+    padding: 2rem;
+  }
+}
